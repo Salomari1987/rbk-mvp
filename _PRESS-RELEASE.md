@@ -1,4 +1,4 @@
-# Project Name #
+# EventHub! # 
 
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -16,29 +16,29 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
 
-## Heading ##
+## EventHub ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
-## Sub-Heading ##
+## An app to search for events of a certain category ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
 
-## Summary ##
+## The EventHub is an app that allows you to search for events, browse events in a certain areas, save events you like (for future use). ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
-## Problem ##
+## In many cases it is hard to find something to do in a certain place, and if available you have to search many websites and ask around to find something ##
   > Describe the problem your product solves.
 
-## Solution ##
+## EventHub makes it easy to add events by users, view events, sort them, categorise them, save them in a personal list, and to buy tickets through a partner website, it also allows users to create events ##
   > Describe how your product elegantly solves the problem.
 
-## Quote from You ##
+## Fun should be easy! ##
   > A quote from a spokesperson in your company.
 
-## How to Get Started ##
+## Just insert a search criteria, and browse all events that match your criteria ##
   > Describe how easy it is to get started.
 
-## Customer Quote ##
+## EventHub changed my life, going out became one click away ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
-## Closing and Call to Action ##
+## Visit our website and lets party! ##
   > Wrap it up and give pointers where the reader should go next.
