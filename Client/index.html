@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
+     below them until after the scripts load-->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="node_modules/underscore/underscore.js"></script>
+    <script src="node_modules/backbone/backbone.js"></script>
+
+    <script src="Models/ContactModel.js"></script>
+    <script src="Collections/Contacts.js"></script>
+    <script src="Collections/ContactsList.js"></script>
+    <script src="Models/AppModel.js"></script>
+
+    <script src="Views/ContactView.js"></script>
+    <script src="Views/ContactlistView.js"></script>
+    <script src="Views/ContactlistEntryView.js"></script>
+    <script src="Views/NavPanelView.js"></script>
+    <script src="Views/SearchView.js"></script>
+    <script src="Views/SearchButtonView.js"></script>
+    <script src="Views/SearchBoxView.js"></script>
+    <script src="Views/AppView.js"></script>
+
+    <script src="data/data.js"></script>
+
+
+    <script>
+      $(function(){
+        var contacts = new Contacts(connections);
+        var app = new AppModel({contacts: contacts});
+
+        // build a view for the top level of the whole app
+        var appView = new AppView({model: app});
+
+        // put the view onto the screen
+        $('body').append(appView.render());
+      });
+    </script>
+  </body>
+</html>

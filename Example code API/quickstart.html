@@ -63,20 +63,20 @@
       function listConnectionNames() {
         var request = gapi.client.people.people.connections.list({
            'resourceName': 'people/me',
-           'pageSize': 500,
+           'pageSize': '6',
+           'requestMask.includeField': 'person.names,person.email_addresses,person.phone_numbers',
          });
-
          request.execute(function(resp) {
            var connections = resp.connections;
            appendPre('Connections:');
-
+           console.log(connections)
            if (connections.length > 0) {
              console.log(connections, "connections")
              for (i = 0; i < connections.length; i++) {
                var person = connections[i];
                console.log(person, "person")
                if (person.names && person.names.length > 0) {
-                 appendPre(person.names[0].displayName)
+                 appendPre(person.names[0].displayName + (person.phoneNumbers ? (", "+ person.phoneNumbers[0].value): "") + (person.emailAddresses? (", "+ person.emailAddresses[0].value) : ""))
                } else {
                  appendPre("No display name found for connection.");
                }
