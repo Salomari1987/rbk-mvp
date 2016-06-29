@@ -1,0 +1,6 @@
+var SearchField = Backbone.Model.extend({
+	value: null,
+	entry: function (e){
+		this.value = e.target.value
+	}
+})

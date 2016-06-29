@@ -6,10 +6,10 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="node_modules/underscore/underscore.js"></script>
     <script src="node_modules/backbone/backbone.js"></script>
-
+    <script src="Models/SearchField.js"></script>
     <script src="Models/ContactModel.js"></script>
     <script src="Collections/Contacts.js"></script>
-    <script src="Collections/ContactsList.js"></script>
+    <script src="Collections/SearchFields.js"></script>
     <script src="Models/AppModel.js"></script>
 
     <script src="Views/ContactView.js"></script>
@@ -27,7 +27,9 @@
     <script>
       $(function(){
         var contacts = new Contacts(connections);
-        var app = new AppModel({contacts: contacts});
+        var searchfields = new SearchFields(searchFi)
+        var app = new AppModel({contacts: contacts,
+                                searchfields: searchfields});
 
         // build a view for the top level of the whole app
         var appView = new AppView({model: app});

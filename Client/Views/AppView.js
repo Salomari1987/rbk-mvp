@@ -2,9 +2,9 @@
 var AppView = Backbone.View.extend({
 
   initialize: function(params){
-    // this.contactView = new PlayerView({model: this.model.get('currContact')});
+    this.contactView = new ContactView({model: this.model.get('currContact')});
     this.contactlistView = new ContactListView({collection: this.model.get('contacts')});
-    // this.searchView = new SearchView({collection: this.model.get('searchFields')});
+    this.searchView = new SearchView({collection: this.model.get('searchfields')});
 
     // this.model.on('', function(model){
     // }, this);
@@ -12,7 +12,7 @@ var AppView = Backbone.View.extend({
 
   render: function(){
     return this.$el.html([
-      // this.searchView.$el,
+      this.searchView.$el,
       this.contactlistView.$el,
       // this.contactView.$el,
     ]);

@@ -5,5 +5,6 @@ var ContactModel = Backbone.Model.extend({
 	},
 	close: function(){
 
-	}
+	},
+	hidden:false,
 })

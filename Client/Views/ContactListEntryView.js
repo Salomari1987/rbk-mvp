@@ -12,7 +12,9 @@ var ContactListEntryView = Backbone.View.extend({
   },
 
   render: function(){
-    return this.$el.html(this.template(this.model.attributes));
+    if(!this.model.hidden){
+      return this.$el.html(this.template(this.model.attributes));  
+    }
   }
 
 });
