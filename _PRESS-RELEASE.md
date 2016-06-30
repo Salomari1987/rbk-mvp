@@ -1,4 +1,4 @@
-# EventHub! # 
+# Goo Contacts! # 
 
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -16,29 +16,29 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
 
-## EventHub ##
+## Goo Contacts ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
-## An app to search for events of a certain category ##
+## An app to manage your google contacts effectively ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
 
-## The EventHub is an app that allows you to search for events, browse events in a certain areas, save events you like (for future use). ##
+## Goo Contacts allows users to search and view contacts in a more effective way. ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
-## In many cases it is hard to find something to do in a certain place, and if available you have to search many websites and ask around to find something ##
+## Google contacts only allows you to search through contacts using names, phone numbers and other attributes cannot be searched through, Goo Contacts solves that issue ##
   > Describe the problem your product solves.
 
-## EventHub makes it easy to add events by users, view events, sort them, categorise them, save them in a personal list, and to buy tickets through a partner website, it also allows users to create events ##
+## Goo Contacts looks good, the search is quick, and the display is elegant ##
   > Describe how your product elegantly solves the problem.
 
-## Fun should be easy! ##
+## Viewing contacts should be easy! ##
   > A quote from a spokesperson in your company.
 
-## Just insert a search criteria, and browse all events that match your criteria ##
+## Just insert a search criteria and press enter ##
   > Describe how easy it is to get started.
 
-## EventHub changed my life, going out became one click away ##
+## Finally I can search through my contacts when my phone breaks, I do not have to answer anonymous calls anymore! ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
-## Visit our website and lets party! ##
+## Visit our app and manage your contacts more effectively TODAY! ##
   > Wrap it up and give pointers where the reader should go next.
