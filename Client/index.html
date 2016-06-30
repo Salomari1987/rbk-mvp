@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
-     below them until after the scripts load-->
+<head>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="node_modules/underscore/underscore.js"></script>
     <script src="node_modules/backbone/backbone.js"></script>
@@ -15,28 +13,27 @@
     <script src="Views/ContactView.js"></script>
     <script src="Views/ContactlistView.js"></script>
     <script src="Views/ContactlistEntryView.js"></script>
-    <script src="Views/NavPanelView.js"></script>
+    <!-- <script src="Views/NavPanelView.js"></script> -->
     <script src="Views/SearchView.js"></script>
-    <script src="Views/SearchButtonView.js"></script>
-    <script src="Views/SearchBoxView.js"></script>
+    <!-- <script src="Views/SearchButtonView.js"></script> -->
+    <!-- <script src="Views/SearchBoxView.js"></script> -->
     <script src="Views/AppView.js"></script>
-
     <script src="data/data.js"></script>
+    <script src="StarterLoad.js"></script>
+    <script src="Google_API.js"></script>
 
-
-    <script>
-      $(function(){
-        var contacts = new Contacts(connections);
-        var searchfields = new SearchFields(searchFi)
-        var app = new AppModel({contacts: contacts,
-                                searchfields: searchfields});
-
-        // build a view for the top level of the whole app
-        var appView = new AppView({model: app});
-
-        // put the view onto the screen
-        $('body').append(appView.render());
-      });
+</head>
+  <body>
+    <!-- Scripts may be placed anywhere on a page. But FYI, they block rendering of elements
+     below them until after the scripts load-->
+    <script src="https://apis.google.com/js/client.js?onload=checkAuth"> 
     </script>
+    <div id="authorize-div" style="display: none">
+      <span>Authorize access to People API</span>
+      <!--Button for the user to click to initiate auth sequence -->
+      <button id="authorize-button" onclick="handleAuthClick(event)">
+        Authorize
+      </button>
+    </div>
   </body>
 </html>

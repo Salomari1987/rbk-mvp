@@ -1,21 +1,21 @@
 //Navigation View
 var SearchView = Backbone.View.extend({
 	tagName: "nav",
-  // events: {
-  //   "change": function(e) {
-  //     this.collection.x()
-  //   }
-  // },
+  template: _.template('<input id=searchbox style="float:left" type=text placeholder=insert ></input>'),
+
+  events: {
+    "change": function(e) {
+      this.model.entry(e);
+      $('#searchbox').empty()
+      this.render();
+    }
+  },
   initialize: function() {
     this.render();
 
   },
 
   render: function(){
-    this.$el.append(
-      this.collection.map(function(field){
-        return new SearchBoxView({model: field}).render();
-      })).append(
-    	new SearchButtonView({collection:this.collection}).render())
+    this.$el.append(this.$el.html(this.template))
   }
 })

@@ -3,8 +3,18 @@ var ContactListEntryView = Backbone.View.extend({
 
   tagName: 'tr',
 
-  template: _.template('<td style:"font-weight:bold"><%= names[0].displayName %></td><br><td><%= phoneNumbers[0].value %></td>'),
-
+  template:function(){
+    console.log(this.names, 'template')
+    if (this.names){
+      if(this.phoneNumbers){
+          return _.template('<td style:"font-weight:bold"><%= names[0].displayName %></td><br><td><%= phoneNumbers[0].value %></td>', this)
+       }
+       return _.template('<td style:"font-weight:bold"><%= names[0].displayName %></td><br><td>No phone numbers to display</td>', this)
+     } else if(this.phoneNumbers){
+       return _.template('<td style:"font-weight:bold"> No names to display </td><br><td><%= phoneNumbers[0].value %></td>', this)
+     }
+     return _.template('<td style:"font-weight:bold"> No names to display </td><br><td>No phone numbers to display</td>')
+  },
   events: {
     'click': function() {
       this.model.select();      
@@ -12,9 +22,7 @@ var ContactListEntryView = Backbone.View.extend({
   },
 
   render: function(){
-    if(!this.model.hidden){
-      return this.$el.html(this.template(this.model.attributes));  
-    }
+      return this.$el.html(this.template.call(this.model.attributes, this.model.attributes));  
   }
 
 });
