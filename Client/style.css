@@ -28,3 +28,10 @@
 	font-size: xx-large;
 	font-family: Arial;
 }
+.contactEntry{
+	border-radius: 10px;
+	border-color: #F9E3DE;
+	border-style: solid;
+	margin:2px;
+
+}
