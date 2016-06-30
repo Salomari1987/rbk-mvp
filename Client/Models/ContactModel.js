@@ -1,10 +1,6 @@
 //Contact Model
 var ContactModel = Backbone.Model.extend({
 	select: function(){
-
+		this.trigger('select', this)
 	},
-	close: function(){
-
-	},
-	hidden:false,
 })

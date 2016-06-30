@@ -1,4 +1,4 @@
-var starter = function(connections){
+var starter = function(){
         console.log(connections, 'starter code')
         var contacts = new Contacts(connections);
         var searchfield = new SearchField()

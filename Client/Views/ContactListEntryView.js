@@ -1,19 +1,19 @@
 //Contact List Entry View
 var ContactListEntryView = Backbone.View.extend({
 
-  tagName: 'tr',
-
+  tagName: 'li',
+  className: 'contactEntry',
   template:function(){
     console.log(this.names, 'template')
     if (this.names){
       if(this.phoneNumbers){
-          return _.template('<td style:"font-weight:bold"><%= names[0].displayName %></td><br><td><%= phoneNumbers[0].value %></td>', this)
+          return _.template('<p style:"font-weight:bold"><%= names[0].displayName %></p>', this)
        }
-       return _.template('<td style:"font-weight:bold"><%= names[0].displayName %></td><br><td>No phone numbers to display</td>', this)
+       return _.template('<p style:"font-weight:bold"><%= names[0].displayName %></p>', this)
      } else if(this.phoneNumbers){
-       return _.template('<td style:"font-weight:bold"> No names to display </td><br><td><%= phoneNumbers[0].value %></td>', this)
+       return _.template('<p style:"font-weight:bold"> No names to display</p>', this)
      }
-     return _.template('<td style:"font-weight:bold"> No names to display </td><br><td>No phone numbers to display</td>')
+     return _.template('<p style:"font-weight:bold"> No names to display</p>')
   },
   events: {
     'click': function() {
@@ -22,7 +22,7 @@ var ContactListEntryView = Backbone.View.extend({
   },
 
   render: function(){
-      return this.$el.html(this.template.call(this.model.attributes, this.model.attributes));  
+    return this.$el.append('<img src=http://files.itproportal.com/wp-content/uploads/photos/anon_1.jpeg class="profile">').append(this.template.call(this.model.attributes, this.model.attributes));    
   }
 
 });

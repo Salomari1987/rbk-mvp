@@ -9,13 +9,16 @@ var AppView = Backbone.View.extend({
 
     // this.model.on('', function(model){
     // }, this);
+    this.model.on('change:currContact', function(model){
+      this.contactView.chooseContact(model.get('currContact'))
+    }, this)
   },
 
   render: function(){
     return this.$el.html([
       this.searchView.$el,
       this.contactlistView.$el,
-      // this.contactView.$el,
+      this.contactView.$el,
     ]);
   }
 

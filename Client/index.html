@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="node_modules/underscore/underscore.js"></script>
     <script src="node_modules/backbone/backbone.js"></script>
@@ -28,11 +30,25 @@
      below them until after the scripts load-->
     <script src="https://apis.google.com/js/client.js?onload=checkAuth"> 
     </script>
+    <div class="page-header">
+        <div class="jumbotron">
+           
+                <h1 id="pageHeader">
+                 <p class="text-center"> Manage Your Contacts 
+                    <small>
+                        <small>Today
+                        </small>
+                    </small>
+                     </p>
+                </h1>
+           
+        </div>        
+    </div>
     <div id="authorize-div" style="display: none">
-      <span>Authorize access to People API</span>
+      <span style="font-size:x-large; border:1px solid black; padding:20px; border-right:none">Press button to authorize app access to your Gmail account</span>
       <!--Button for the user to click to initiate auth sequence -->
       <button id="authorize-button" onclick="handleAuthClick(event)">
-        Authorize
+        Log In
       </button>
     </div>
   </body>

@@ -1,0 +1,30 @@
+.profile {
+	width:30px;
+	height:30px;
+}
+#currentContact{
+	width:500px;
+	height: 500px;
+}
+.table{
+	border:2px solid black;
+}
+#authorize-div{
+	position:absolute;
+	bottom:60%;
+	left:30%;
+}
+#authorize-button{
+	font-family:Arial;
+	font-size:x-large;
+	padding:20px;
+}
+.contact{
+	position:absolute;
+	top:10px;
+	left:80px;
+}
+#contactview {
+	font-size: xx-large;
+	font-family: Arial;
+}
