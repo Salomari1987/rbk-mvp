@@ -38,7 +38,6 @@ function listConnectionNames() {
    request.execute(function(resp) {
       window.connections = resp.connections
       if(resp.connections.length>0){
-        console.log(resp.connections, 'google api')
         window.starter();
       }
    }); 

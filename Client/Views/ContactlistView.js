@@ -9,11 +9,9 @@ var ContactListView = Backbone.View.extend({
 
   render: function(){
     this.$el.children().detach();
-    console.log(this.collection, 'contact list view')
     this.$el.append(this.template())
     this.$('#listof').append(
       this.collection.map(function(contact){
-        console.log(contact, 'contactlist view')
         return new ContactListEntryView({model: contact}).render();
       }))
   }
